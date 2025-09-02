@@ -1,0 +1,102 @@
+.visualizer-container {
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark gradient */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.visualizer-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #c2185b;
+  font-style:inherit;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.controls button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.controls select,
+.controls input[type="range"] {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.controls select option {
+  color: black;
+}
+
+.controls input[type="range"] {
+  -webkit-appearance: none;
+  height: 6px;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.bars-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bar {
+  background: linear-gradient(180deg, #ff9a9e, #fad0c4);
+  margin: 0 2px;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.2s ease, background 0.3s ease;
+}
+
+.bar.active {
+  background: linear-gradient(180deg, #43e97b, #38f9d7);
+}
